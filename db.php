@@ -3,7 +3,7 @@
 class Database {
     public $pdo;
 
-    public function __construct($db= "eindopdracht", $user="root", $pass="", $host="localhost:3307")
+    public function __construct($db="eindopdracht", $user="root", $pass="", $host="localhost:3307")
     {
         try {
             $this->pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
@@ -19,12 +19,10 @@ class Database {
       {
           $sql = "INSERT INTO Klant (Naam, Rijbewijsnummer, Telefoonnummer, Email, Wachtwoord) VALUES (?, ?, ?, ?, ?)";
           $stmt = $this->pdo->prepare($sql);
-          
+
           $wachtwoord = password_hash($wachtwoord, PASSWORD_DEFAULT);
           $stmt->execute([$naam, $rijbewijsnummer, $telefoonnummer, $email, $wachtwoord]);
       }
   }
-
-$conn = new Database();
 
 ?>
