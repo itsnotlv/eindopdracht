@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4a4848;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.registration-form {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 4px 6px rgba(39, 4, 177, 0.726);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.gender-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Stijl voor de geslacht (gender) labels */
+.gender-container label {
+    font-size: 16px;
+}
+
+/* Stijl voor de geslacht (gender) radio-buttons */
+.gender-container input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Stijl voor de knop om het formulier in te dienen */
+input[type="submit"] {
+    background-color: #0a0093;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+form {
+    width: 100%;
+}
